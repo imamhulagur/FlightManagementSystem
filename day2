@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BookMyFlight</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style>
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+}
+</style>
+</head>
+
+
+<body style="background-color:white;">
+
+	<h1>Book Domestic and International flights</h1>
+	
+	From :	
+	<select style="background-color:white">
+			<option value="select source" > </option>
+				<option value="New Delhi (DEL)">New Delhi (DEL)</option>
+				<option value="Mumbai (BOM)">Mumbai (BOM)</option>
+				<option value="Bangalore (BLR)">Bangalore (BLR))</option>
+				<option value="Goa (GOI)">Goa (GOI)</option>
+				<option value="Chennai (MAA)">Chennai (MAA)</option>
+				<option value="Kolkata (CCU)">Kolkata (CCU)</option>
+				<option value="Hyderabad (HYD)">Hyderabad (HYD)</option>
+				<option value="Pune (PNQ))">Pune (PNQ)</option>
+				<option value="Ahmedabad (AMD)">Ahmedabad (AMD)</option>
+				<option value="Cochin (COK)">Cochin (COK)</option>
+	</select>
+	
+	To   :	
+	<select style="background-color:white">
+			<option value="select Destination"></option>
+				<option value="New Delhi (DEL)">New Delhi (DEL)</option>
+				<option value="Mumbai (BOM)">Mumbai (BOM)</option>
+				<option value="Bangalore (BLR)">Bangalore (BLR))</option>
+				<option value="Goa (GOI)">Goa (GOI)</option>
+				<option value="Chennai (MAA)">Chennai (MAA)</option>
+				<option value="Kolkata (CCU)">Kolkata (CCU)</option>
+				<option value="Hyderabad (HYD)">Hyderabad (HYD)</option>
+				<option value="Pune (PNQ))">Pune (PNQ)</option>
+				<option value="Ahmedabad (AMD)">Ahmedabad (AMD)</option>
+				<option value="Cochin (COK)">Cochin (COK)</option>
+	</select>
+	
+	Depart : 
+	<input type="date" name="Date" style="background-color:white;">
+	
+	Return : 
+	<input type="date" name="Date" style="background-color:white;">
+
+class/passengers :
+	<div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Economy 
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li class="dropdown-submenu">
+     
+     Adults: 
+	<input type="number"  min="1" max="99"> 
+	Children:
+	<input type="number"  min="1" max="99" >
+	Infants: 
+	<input type="number" min="1" max="99" >
+        </li>
+    </ul>
+ </div>
+ 
+ <div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Premium Economy
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li class="dropdown-submenu">
+    
+    Adults: 
+	<input type="number"  min="1" max="99"> 
+	Children:
+	<input type="number"  min="1" max="99" >
+	Infants: 
+	<input type="number" min="1" max="99" >
+      </li>
+    </ul>
+ </div>
+  
+  
+<div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Business
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li class="dropdown-submenu">
+      
+    Adults: 
+	<input type="number"  min="1" max="99"> 
+	Children:
+	<input type="number"  min="1" max="99" >
+	Infants: 
+	<input type="number" min="1" max="99" >
+	   </li>
+    </ul>
+ </div>  
+ 
+ <button type="button" style="margin-left:50%; margin-right:50%;">SEARCH</button>
+ 
+ <script>
+$(document).ready(function(){
+  $('.dropdown-submenu a.test').on("click", function(e){
+    $(this).next('ul').toggle();
+    e.stopPropagation();
+    e.preventDefault();
+  });
+});
+</script>
+
+
+	
+</body>
+
+</html>
