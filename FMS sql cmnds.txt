@@ -1,0 +1,39 @@
+create table user( id int auto_increment  primary key,fname varchar(20) not null,lname varchar(20) not null,address varchar(60),cardnum int(12),cvv int(3),card_holder varchar(10),end_date varchar(10),password varchar(20),confirm password varchar(20));
+
+
+
+
+
+
+
+
+
+create table users( id int auto_increment  primary key,fname varchar(20) not null,lname varchar(20) not null,address varchar(60),cardnum int(12),cvv int(3),card_holder varchar(10),end_date varchar(10),password varchar(20),confirm_USER password varchar(20));
+
+
+
+
+
+
+class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"
+
+
+insert into flights values('New Delhi','Bangalore','Indigo','07:30:00','10:30:00','03h',5000,80);
+insert into flights values('Bangalore','Mumbai','Airlines','07:30:00','09:30:00','02h',2400,80);
+insert into flights values('Goa','Mumbai','Indigo','07:30:00','09:30:00','02h',3000,80);
+insert into flights values('Chennai','Bangalore','Airlines','07:30:00','09:30:00','02h',2000,80);
+insert into flights values('Hyderabad','Bangalore','Indigo','07:30:00','09:30:00','02h',1000,80);
+insert into flights values('Hyderabad','Mumbai','Airlines','07:30:00','09:30:00','02h',3000,80);
+insert into flights values('Pune','Mumbai','Indigo','07:30:00','09:30:00','02h',2700,80);
+insert into flights values('Ahmedabad','Pune','Airlines','07:30:00','09:30:00','02h',3200,80);
+insert into flights values('Bangalore','Hyderabad','Indigo','07:30:00','09:30:00','02h',5300,80);
+
+
+
+
+
+
+
+
+create table  flights(fromloc varchar(20),toloc varchar(20),airline varchar(20),departure time(8),arrival time(8),duration varchar(10),price double(17),seat_num int);
+insert into flights values('New Delhi (DEL)','Mumbai (BOM)','Indigo','07:30:00','09:30:00','02h',5000,80);
